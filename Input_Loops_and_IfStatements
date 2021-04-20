@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr 19 11:29:36 2021
+
+@author: rh.hayden
+Title: Input, Loops and If Statements
+"""
+#Asking for two numbers and multiplying them together
+num1 = eval(input('Enter a number: '))
+num2 = eval(input('Enter another number: '))
+print('The two numbers you provided multiplied together are: ', num1*num2)
+#Using a comma above rather than a + is important here
+#Using a + does not run correctly
+print('Your first number squared is: ', num1*num1)
+
+
+#Converting temperature from Farenheit to Celcius 
+temp = eval(input('Enter the temperature in Farenheit: '))
+print('The temperature in Celcius is', (temp-32)*5/9)
+
+#The first option puts a space between 9 and the period
+#The second option does not
+print('The value of 5+4 is: ', 5+4, '.')
+print('The value of 5+4 is: ', 5+4, '.', sep = '')
+
+#Using if, elif, and else
+grade = eval(input('Enter your grade for your Exam: '))
+if grade >= 90:
+    print('You recieved an A')
+elif grade >= 80:
+    print('You recieved a B')
+elif grade >= 70:
+    print('You recieved a C')
+else:
+    print('You recieved a F')
+    
+#Using range to print a box of *
+for i in range(5):
+    print('*' * 7)
+    
+#Import everything in the Math Module
+from math import *
